@@ -6,7 +6,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/std"
 	"github.com/cosmos/cosmos-sdk/x/auth/tx"
 
-	"github.com/ComputerKeeda/airsettle/app/params"
+	"github.com/airchains-network/airsettle/app/params"
 )
 
 // makeEncodingConfig creates an EncodingConfig for an amino based test configuration.

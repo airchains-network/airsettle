@@ -1,8 +1,8 @@
 package airsettle
 
 import (
-	"github.com/ComputerKeeda/airsettle/x/airsettle/keeper"
-	"github.com/ComputerKeeda/airsettle/x/airsettle/types"
+	"github.com/airchains-network/airsettle/x/airsettle/keeper"
+	"github.com/airchains-network/airsettle/x/airsettle/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

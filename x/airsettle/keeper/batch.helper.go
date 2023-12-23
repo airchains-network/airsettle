@@ -2,7 +2,7 @@ package keeper
 
 import (
 	"encoding/json"
-	"github.com/ComputerKeeda/airsettle/x/airsettle/types"
+	"github.com/airchains-network/airsettle/x/airsettle/types"
 	bls12381 "github.com/airchains-network/gnark/backend/groth16/bls12-381"
 	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
 	"github.com/cosmos/cosmos-sdk/store/prefix"

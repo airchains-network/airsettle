@@ -9,7 +9,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/ComputerKeeda/airsettle/x/airsettle/types"
+	"github.com/airchains-network/airsettle/x/airsettle/types"
 )
 
 type (

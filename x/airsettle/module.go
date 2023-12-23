@@ -11,9 +11,9 @@ import (
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	"github.com/ComputerKeeda/airsettle/x/airsettle/client/cli"
-	"github.com/ComputerKeeda/airsettle/x/airsettle/keeper"
-	"github.com/ComputerKeeda/airsettle/x/airsettle/types"
+	"github.com/airchains-network/airsettle/x/airsettle/client/cli"
+	"github.com/airchains-network/airsettle/x/airsettle/keeper"
+	"github.com/airchains-network/airsettle/x/airsettle/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"

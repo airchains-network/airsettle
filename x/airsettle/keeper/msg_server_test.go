@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	keepertest "github.com/ComputerKeeda/airsettle/testutil/keeper"
-	"github.com/ComputerKeeda/airsettle/x/airsettle/keeper"
-	"github.com/ComputerKeeda/airsettle/x/airsettle/types"
+	keepertest "github.com/airchains-network/airsettle/testutil/keeper"
+	"github.com/airchains-network/airsettle/x/airsettle/keeper"
+	"github.com/airchains-network/airsettle/x/airsettle/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 )

@@ -6,8 +6,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/server"
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	"github.com/ComputerKeeda/airsettle/app"
-	"github.com/ComputerKeeda/airsettle/cmd/airsettled/cmd"
+	"github.com/airchains-network/airsettle/app"
+	"github.com/airchains-network/airsettle/cmd/airsettled/cmd"
 )
 
 func main() {

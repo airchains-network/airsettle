@@ -3,7 +3,7 @@ package cmd
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/ComputerKeeda/airsettle/app"
+	"github.com/airchains-network/airsettle/app"
 )
 
 func initSDKConfig() {

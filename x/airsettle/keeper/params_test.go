@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"testing"
 
-	testkeeper "github.com/ComputerKeeda/airsettle/testutil/keeper"
-	"github.com/ComputerKeeda/airsettle/x/airsettle/types"
+	testkeeper "github.com/airchains-network/airsettle/testutil/keeper"
+	"github.com/airchains-network/airsettle/x/airsettle/types"
 	"github.com/stretchr/testify/require"
 )
 
