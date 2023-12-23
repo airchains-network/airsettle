@@ -1,0 +1,14 @@
+syntax = "proto3";
+package airsettle.airsettle;
+
+option go_package = "github.com/airchains-network/airsettle/x/airsettle/types";
+
+message BatchMin {
+  
+  string merkleRootHash = 1; 
+  string zkProof = 2; 
+  string witness = 3; 
+  string verified = 4; 
+  string batchSubmitter = 5; 
+  string batchVerifier = 6; 
+}

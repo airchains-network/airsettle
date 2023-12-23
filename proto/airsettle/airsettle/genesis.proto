@@ -1,0 +1,12 @@
+syntax = "proto3";
+package airsettle.airsettle;
+
+import "gogoproto/gogo.proto";
+import "airsettle/airsettle/params.proto";
+
+option go_package = "github.com/airchains-network/airsettle/x/airsettle/types";
+
+// GenesisState defines the airsettle module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

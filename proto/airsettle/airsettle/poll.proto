@@ -1,0 +1,17 @@
+syntax = "proto3";
+package airsettle.airsettle;
+
+option go_package = "github.com/airchains-network/airsettle/x/airsettle/types";
+
+message Poll {
+  
+  string pollId = 1; 
+  string chainId = 2; 
+  string newValidator = 3; 
+  repeated string votesDoneBy = 4; 
+  repeated string votes = 5; 
+  uint64 totalValidators = 6; 
+  bool isComplete = 7; 
+  string startDate = 8; 
+  string pollCreator = 9; 
+}

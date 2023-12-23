@@ -1,0 +1,10 @@
+vue/node_modules
+vue/dist
+release/
+.idea/
+.vscode/
+.DS_Store
+air.log
+*.log
+/test
+.trunk

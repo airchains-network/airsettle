@@ -1,0 +1,12 @@
+syntax = "proto3";
+package airsettle.airsettle;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/airchains-network/airsettle/x/airsettle/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

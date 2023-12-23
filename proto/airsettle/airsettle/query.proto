@@ -1,0 +1,154 @@
+syntax = "proto3";
+
+package airsettle.airsettle;
+
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+import "cosmos/base/query/v1beta1/pagination.proto";
+import "airsettle/airsettle/params.proto";
+import "airsettle/airsettle/exelayer.proto";
+import "airsettle/airsettle/batch_max.proto";
+import "airsettle/airsettle/poll.proto";
+
+option go_package = "github.com/airchains-network/airsettle/x/airsettle/types";
+
+// Query defines the gRPC querier service.
+service Query {
+  
+  // Parameters queries the parameters of the module.
+  rpc Params (QueryParamsRequest) returns (QueryParamsResponse) {
+    option (google.api.http).get = "/airchains-network/airsettle/airsettle/params";
+  
+  }
+  
+  // Queries a list of VerificationKey items.
+  rpc VerificationKey (QueryVerificationKeyRequest) returns (QueryVerificationKeyResponse) {
+    option (google.api.http).get = "/airchains-network/airsettle/airsettle/verification_key/{id}";
+  
+  }
+  
+  // Queries a list of ShowExecutionLayerByAddress items.
+  rpc ShowExecutionLayerByAddress (QueryShowExecutionLayerByAddressRequest) returns (QueryShowExecutionLayerByAddressResponse) {
+    option (google.api.http).get = "/airchains-network/airsettle/airsettle/show_execution_layer_by_address/{address}";
+  
+  }
+  
+  // Queries a list of ShowExecutionLayerById items.
+  rpc ShowExecutionLayerById (QueryShowExecutionLayerByIdRequest) returns (QueryShowExecutionLayerByIdResponse) {
+    option (google.api.http).get = "/airchains-network/airsettle/airsettle/show_execution_layer_by_id/{id}";
+  
+  }
+  
+  // Queries a list of ListAllExecutionLayers items.
+  rpc ListAllExecutionLayers (QueryListAllExecutionLayersRequest) returns (QueryListAllExecutionLayersResponse) {
+    option (google.api.http).get = "/airchains-network/airsettle/airsettle/list_all_execution_layers";
+  
+  }
+  
+  // Queries a list of GetBatch items.
+  rpc GetBatch (QueryGetBatchRequest) returns (QueryGetBatchResponse) {
+    option (google.api.http).get = "/airchains-network/airsettle/airsettle/get_batch/{batchNumber}/{chainId}";
+  
+  }
+  
+  // Queries a list of ListPolls items.
+  rpc ListPolls (QueryListPollsRequest) returns (QueryListPollsResponse) {
+    option (google.api.http).get = "/airchains-network/airsettle/airsettle/list_polls/{chainId}";
+  
+  }
+  
+  // Queries a list of GetPoll items.
+  rpc GetPoll (QueryGetPollRequest) returns (QueryGetPollResponse) {
+    option (google.api.http).get = "/airchains-network/airsettle/airsettle/get_poll/{chainId}/{pollId}";
+  
+  }
+  
+  // Queries a list of QVerifyBatch items.
+  rpc QVerifyBatch (QueryQVerifyBatchRequest) returns (QueryQVerifyBatchResponse) {
+    option (google.api.http).get = "/airchains-network/airsettle/airsettle/q_verify_batch/{batchNumber}/{chainId}/{merkleRootHash}/{prevMerkleRoot}/{zkProof}";
+  
+  }
+}
+// QueryParamsRequest is request type for the Query/Params RPC method.
+message QueryParamsRequest {}
+
+// QueryParamsResponse is response type for the Query/Params RPC method.
+message QueryParamsResponse {
+  
+  // params holds all the parameters of this module.
+  Params params = 1 [(gogoproto.nullable) = false];
+}
+
+message QueryVerificationKeyRequest {
+  string id = 1;
+}
+
+message QueryVerificationKeyResponse {
+  string vkey = 1;
+}
+
+message QueryShowExecutionLayerByAddressRequest {
+  string address = 1;
+}
+
+message QueryShowExecutionLayerByAddressResponse {
+  Exelayer exelayer = 1;
+}
+
+message QueryShowExecutionLayerByIdRequest {
+  string id = 1;
+}
+
+message QueryShowExecutionLayerByIdResponse {
+  Exelayer exelayer = 1;
+}
+
+message QueryListAllExecutionLayersRequest {
+  cosmos.base.query.v1beta1.PageRequest pagination = 1;
+}
+
+message QueryListAllExecutionLayersResponse {
+  repeated Exelayer                               exelayer   = 1;
+           cosmos.base.query.v1beta1.PageResponse pagination = 2;
+}
+
+message QueryGetBatchRequest {
+  uint64 batchNumber = 1;
+  string chainId     = 2;
+}
+
+message QueryGetBatchResponse {
+  BatchMax batch = 1;
+}
+
+message QueryListPollsRequest {
+  string                                chainId    = 1;
+  cosmos.base.query.v1beta1.PageRequest pagination = 2;
+}
+
+message QueryListPollsResponse {
+  repeated Poll                                   poll       = 1;
+           cosmos.base.query.v1beta1.PageResponse pagination = 2;
+}
+
+message QueryGetPollRequest {
+  string chainId = 1;
+  string pollId  = 2;
+}
+
+message QueryGetPollResponse {
+  Poll poll = 1;
+}
+
+message QueryQVerifyBatchRequest {
+  uint64 batchNumber    = 1;
+  string chainId        = 2;
+  string merkleRootHash = 3;
+  string prevMerkleRoot = 4;
+  string zkProof        = 5;
+}
+
+message QueryQVerifyBatchResponse {
+  bool verified = 1;
+}
+

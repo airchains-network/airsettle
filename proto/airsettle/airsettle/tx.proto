@@ -1,0 +1,71 @@
+syntax = "proto3";
+
+package airsettle.airsettle;
+
+option go_package = "github.com/airchains-network/airsettle/x/airsettle/types";
+
+// Msg defines the Msg service.
+service Msg {
+  rpc AddExecutionLayer    (MsgAddExecutionLayer   ) returns (MsgAddExecutionLayerResponse   );
+  rpc DeleteExecutionLayer (MsgDeleteExecutionLayer) returns (MsgDeleteExecutionLayerResponse);
+  rpc AddBatch             (MsgAddBatch            ) returns (MsgAddBatchResponse            );
+  rpc VerifyBatch          (MsgVerifyBatch         ) returns (MsgVerifyBatchResponse         );
+  rpc AddValidator         (MsgAddValidator        ) returns (MsgAddValidatorResponse        );
+  rpc VotePoll             (MsgVotePoll            ) returns (MsgVotePollResponse            );
+}
+message MsgAddExecutionLayer {
+  string creator         = 1;
+  string verificationKey = 2;
+  string chainInfo       = 3;
+}
+
+message MsgAddExecutionLayerResponse {
+  bool   success = 1;
+  string message = 2;
+}
+
+message MsgDeleteExecutionLayer {
+  string creator = 1;
+}
+
+message MsgDeleteExecutionLayerResponse {}
+
+message MsgAddBatch {
+  string creator     = 1;
+  uint64 batchNumber = 2;
+  string chainId     = 3;
+  string witness      = 4;
+}
+
+message MsgAddBatchResponse {}
+
+message MsgVerifyBatch {
+  string creator        = 1;
+  uint64 batchNumber    = 2;
+  string chainId        = 3;
+  string merkleRootHash = 4;
+  string prevMerkleRoot = 5;
+  string zkProof        = 6;
+}
+
+message MsgVerifyBatchResponse {}
+
+message MsgAddValidator {
+  string creator             = 1;
+  string newValidatorAddress = 2;
+  string chainId             = 3;
+}
+
+message MsgAddValidatorResponse {
+  string votingPollId = 1;
+}
+
+message MsgVotePoll {
+  string creator = 1;
+  string chainId = 2;
+  string pollId  = 3;
+  bool   vote    = 4;
+}
+
+message MsgVotePollResponse {}
+

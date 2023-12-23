@@ -1,0 +1,16 @@
+syntax = "proto3";
+package airsettle.airsettle;
+
+option go_package = "github.com/airchains-network/airsettle/x/airsettle/types";
+
+message Exelayer {
+  
+  repeated string validator = 1; 
+  repeated uint64 votingPower = 2; 
+  uint64 latestBatch = 3; 
+  string latestMerkleRootHash = 4; 
+  string verificationKey = 5; 
+  string chainInfo = 6; 
+  string id = 7; 
+  string creator = 8; 
+}
