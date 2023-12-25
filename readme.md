@@ -45,13 +45,17 @@ Remove the folder `~/.airsettle` if it exists.
 
     rm -rf ~/.airsettle
 
-#### 7. Update Genesis Configuration
+#### 7. Create a New Configuration Folder
+
+    airsettled init <moniker> --chain-id airsettle
+
+#### 8. Update Genesis Configuration
 
 Replace the contents of `~/.airsettle/config/genesis.json` with the contents from the `docs/node/genesis.json` file.
 
     cp docs/node/genesis.json ~/.airsettle/config/genesis.json
 
-#### 8. Update Configuration
+#### 9. Update Configuration
 
 1. Edit `~/.airsettle/config/config.toml` to set `persistent_peers`:
 
@@ -59,6 +63,6 @@ Replace the contents of `~/.airsettle/config/genesis.json` with the contents fro
 persistent_peers = "node_id@ip_address:26656"
 ```
 
-#### 9. Start the Node
+#### 10. Start the Node
 
     airsettled start
