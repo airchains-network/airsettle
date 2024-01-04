@@ -2,33 +2,33 @@ version: 1
 accounts:
   - name: charlie
     coins:
-      - 10000000000token
-      - 10000000000stake
+      - 10000000000000000dair
+      - 10000000000000000stake
   - name: diana
     coins:
-      - 10000000000token
-      - 10000000000stake
+      - 10000000000000000dair
+      - 10000000000000000stake
   - name: ethan
     coins:
-      - 10000000000token
-      - 10000000000stake
+      - 10000000000000000dair
+      - 10000000000000000stake
   - name: fiona
     coins:
-      - 10000000000token
-      - 10000000000stake
+      - 10000000000000000dair
+      - 10000000000000000stake
   - name: george
     coins:
-      - 10000000000token
-      - 10000000000stake
+      - 10000000000000000dair
+      - 10000000000000000stake
 client:
   openapi:
     path: docs/static/openapi.yml
 faucet:
   name: diana
   coins:
-    - 1token
-    - 1stake
-  coins_max: ["100token", "100stake"]
+    - 500000dair
+    - 500000stake
+  coins_max: ["100000000dair", "10000000stake"]
 validators:
   - name: charlie
-    bonded: 1000000000stake
+    bonded: 1000000000000000stake
