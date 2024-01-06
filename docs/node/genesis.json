@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-12-24T12:34:49.704046947Z",
+  "genesis_time": "2024-01-04T07:59:12.854388508Z",
   "chain_id": "airsettle",
   "initial_height": "1",
   "consensus_params": {
@@ -13,7 +13,9 @@
       "max_bytes": "1048576"
     },
     "validator": {
-      "pub_key_types": ["ed25519"]
+      "pub_key_types": [
+        "ed25519"
+      ]
     },
     "version": {
       "app": "0"
@@ -37,35 +39,35 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "air1vtdjsfqy7p3rf6whqz7a2780lnhyehnzsta7ht",
+          "address": "air1wqn54sdvvht42guxmve0tpu7mdjsanzafargqr",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "air1u4zmgs6dkqxal5aagasxq7hpyx2muk552xg0dx",
+          "address": "air1y3uq5d8geqsjr90kls4yjqpxahs3pxwwrwvn9q",
           "pub_key": null,
           "account_number": "1",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "air1sevwfr5wk2z5gr2gq73alue575jfddxsafyqaw",
+          "address": "air1q429hcy3d0hfm4j0n8cr97t9xmn284f6lm3625",
           "pub_key": null,
           "account_number": "2",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "air1l07kk5tdacnxa0neez6s9kvlsczt9hfc6r205q",
+          "address": "air1gqlp4c5ulkhnkgvn60f203chmzszgvf66eeqj6",
           "pub_key": null,
           "account_number": "3",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "air1qdld6rdv387pvn9z6szkvl7htsqfv4jtnewtmz",
+          "address": "air1h9lzn86w70p8mmus03yr7m5lv905e8u2803mwa",
           "pub_key": null,
           "account_number": "4",
           "sequence": "0"
@@ -82,67 +84,67 @@
       },
       "balances": [
         {
-          "address": "air1qdld6rdv387pvn9z6szkvl7htsqfv4jtnewtmz",
+          "address": "air1q429hcy3d0hfm4j0n8cr97t9xmn284f6lm3625",
           "coins": [
             {
-              "denom": "stake",
-              "amount": "10000000000"
+              "denom": "dair",
+              "amount": "10000000000000000"
             },
             {
-              "denom": "token",
-              "amount": "10000000000"
+              "denom": "stake",
+              "amount": "10000000000000000"
             }
           ]
         },
         {
-          "address": "air1vtdjsfqy7p3rf6whqz7a2780lnhyehnzsta7ht",
+          "address": "air1y3uq5d8geqsjr90kls4yjqpxahs3pxwwrwvn9q",
           "coins": [
             {
-              "denom": "stake",
-              "amount": "10000000000"
+              "denom": "dair",
+              "amount": "10000000000000000"
             },
             {
-              "denom": "token",
-              "amount": "10000000000"
+              "denom": "stake",
+              "amount": "10000000000000000"
             }
           ]
         },
         {
-          "address": "air1sevwfr5wk2z5gr2gq73alue575jfddxsafyqaw",
+          "address": "air1gqlp4c5ulkhnkgvn60f203chmzszgvf66eeqj6",
           "coins": [
             {
-              "denom": "stake",
-              "amount": "10000000000"
+              "denom": "dair",
+              "amount": "10000000000000000"
             },
             {
-              "denom": "token",
-              "amount": "10000000000"
+              "denom": "stake",
+              "amount": "10000000000000000"
             }
           ]
         },
         {
-          "address": "air1u4zmgs6dkqxal5aagasxq7hpyx2muk552xg0dx",
+          "address": "air1wqn54sdvvht42guxmve0tpu7mdjsanzafargqr",
           "coins": [
             {
-              "denom": "stake",
-              "amount": "10000000000"
+              "denom": "dair",
+              "amount": "10000000000000000"
             },
             {
-              "denom": "token",
-              "amount": "10000000000"
+              "denom": "stake",
+              "amount": "10000000000000000"
             }
           ]
         },
         {
-          "address": "air1l07kk5tdacnxa0neez6s9kvlsczt9hfc6r205q",
+          "address": "air1h9lzn86w70p8mmus03yr7m5lv905e8u2803mwa",
           "coins": [
             {
-              "denom": "stake",
-              "amount": "10000000000"
+              "denom": "dair",
+              "amount": "10000000000000000"
             },
             {
-              "denom": "token",
-              "amount": "10000000000"
+              "denom": "stake",
+              "amount": "10000000000000000"
             }
           ]
         }
@@ -207,19 +209,19 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "air1vtdjsfqy7p3rf6whqz7a2780lnhyehnzsta7ht",
-                "validator_address": "airvaloper1vtdjsfqy7p3rf6whqz7a2780lnhyehnzww08jz",
+                "delegator_address": "air1wqn54sdvvht42guxmve0tpu7mdjsanzafargqr",
+                "validator_address": "airvaloper1wqn54sdvvht42guxmve0tpu7mdjsanzahc3392",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "KWS+uympih6eUSCcbpR9WzDll2UuGQpFq0pIcjqCzmw="
+                  "key": "2RtyYsVhtJ3u57rz5uA0FbX3VDHZCJO8VLjYMpu5hdk="
                 },
                 "value": {
                   "denom": "stake",
-                  "amount": "1000000000"
+                  "amount": "1000000000000000"
                 }
               }
             ],
-            "memo": "a3f7bb15a4bafe7530bab5702608c32daa71b575@10.132.0.2:26656",
+            "memo": "a78dd704a84b75b261d2af2a11018f467b70d067@10.132.0.2:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -229,7 +231,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "AyZgGXXFEH/LQVr8q6fn6QIjAVGTUJzo93nsNhqYO5Yv"
+                  "key": "AwnYAOjQyZC5J2BEIC6gtdW/Es3Q00EfCWpID78UiLv/"
                 },
                 "mode_info": {
                   "single": {
@@ -248,7 +250,7 @@
             "tip": null
           },
           "signatures": [
-            "keIfYJ+Io9KcGA9G1IhfqApfdI3NVrBstgcqQB5u8dInZ8sI+Pw6UARtbcMvwhGo8HmNulTpTyOBnWwMrqvsAw=="
+            "/IKJde9hUkb4tQg0Ch5j+16wZf99Q9Nusq/BxXSA9k4m+99hTipw/Yqoee973kJw/vAyFRl4Ci/3vxRy6+8/Jg=="
           ]
         }
       ]
@@ -307,7 +309,11 @@
         "create_localhost": false,
         "next_client_sequence": "0",
         "params": {
-          "allowed_clients": ["06-solomachine", "07-tendermint", "09-localhost"]
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint",
+            "09-localhost"
+          ]
         }
       },
       "connection_genesis": {
@@ -332,7 +338,9 @@
         "active_channels": [],
         "interchain_accounts": [],
         "params": {
-          "allow_messages": ["*"],
+          "allow_messages": [
+            "*"
+          ],
           "host_enabled": true
         },
         "port": "icahost"
